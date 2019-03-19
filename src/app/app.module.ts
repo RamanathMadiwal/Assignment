@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { FetchLessonService} from './common/services/fetch-lesson.service';
 import {HttpClientModule} from "@angular/common/http";
 import { GroupByPipePipe } from './common/pipe/group-by-pipe.pipe';
+import { ChannelSessionsComponent } from './components/channelsessions/channelsessions.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GroupByPipePipe
+    GroupByPipePipe,
+    ChannelSessionsComponent
   ],
   imports: [
     BrowserModule,
