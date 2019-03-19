@@ -21,17 +21,11 @@ export class AppComponent {
     this.loadLessonDetails();
   }
 
-  sortByDate(data: Channel):Channel{
 
-
-    return data
-
-
-  }
   loadLessonDetails() {
     this.fetchLessonServices.getLessons().subscribe(
       (data: Channel) => {
-        this.channel= this.sortByDate(data);
+        this.channel= data;
 
         console.log(data);
       },

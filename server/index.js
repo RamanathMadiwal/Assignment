@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3001;
 const appPath=path.join(__dirname,'..','dist');
 app.use(express.static(appPath));
 
-app.use('/api/v1/rentals', channelRoute);
+app.use('/api/lessons', channelRoute);
 
 app.listen(PORT,function () {
   console.log('App is running at Port !'+PORT);

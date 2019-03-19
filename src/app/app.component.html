@@ -1,10 +1,10 @@
-<div class="container ">
-      <div *ngFor="let lessonData of channel">
+<div class="container mainbg">
+      <div *ngFor="let lessonData of channel ">
         <div class="container">
           <div class="row">
             <div class="mx-auto">
-            <p>{{date | date:'fullDate'}}</p>
-            <div class="panel border-light mb-3">
+            <h4>{{lessonData.time | date:'fullDate'}}</h4>
+            <div class="panel border-light mb-3 panelwidth">
               <div class="panel-body">
                 <div class="col-md-1">
                   <img class="img-circle" src="{{lessonData.subjectPhotoUrl}}" alt="Subjects Photo">
@@ -18,7 +18,7 @@
                   {{lessonData.instructorName}}
                 </div>
                 <div class="col-md-2">
-                  <p> {{lessonData.time}}</p>
+                  <p> {{lessonData.time | date:'medium'}}</p>
                 </div>
               </div>
             </div>
