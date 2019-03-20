@@ -3,8 +3,8 @@
     <div *ngFor="let lessonData of channel ">
       <h4>{{lessonData.key | date:'fullDate'}}</h4>
       <div *ngFor="let individualLessonData of lessonData.value">
-        <div class="mx-auto align-content-center">
-          <div class="card border-light custom-panel-width">
+        <div>
+          <div class="card border-light w-55">
             <div class="card-body">
               <div class="container">
                 <div class="row">
@@ -27,6 +27,7 @@
             </div>
           </div>
         </div>
+        <br>
       </div>
     </div>
   </div>
