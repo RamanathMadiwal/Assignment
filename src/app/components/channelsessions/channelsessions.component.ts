@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {HttpErrorResponse} from '@angular/common/http';
 import {FetchLessonService} from '../../common/services/fetch-lesson.service';
-import {Channel} from "../../Model/channel.model";
+import {Channel} from "../../model/channel.model";
 import _ from 'lodash';
 import * as moment from 'moment';
 import { map } from 'rxjs/operators';
