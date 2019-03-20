@@ -2,10 +2,8 @@ const channelData = require('../channel');
 const express = require('express');
 const router = express.Router();
 
-router.get('',function (req, res) {
-  if (err) {
-    return res.status(422).send({errors: "Unable to retrieve Data"});
-  }
+router.get('/lessons',function (req, res) {
+  console.log("The code reached server functions");
   res.json(channelData);
 });
 
