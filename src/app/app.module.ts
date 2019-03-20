@@ -5,14 +5,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FetchLessonService} from './common/services/fetch-lesson.service';
 import {HttpClientModule} from "@angular/common/http";
-import { GroupByPipePipe } from './common/pipe/group-by-pipe.pipe';
+import { GroupByPipe } from './common/pipe/group-by.pipe';
 import { ChannelSessionsComponent } from './components/channelsessions/channelsessions.component';
+import { GroupdatesComponent } from './components/groupdates/groupdates.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    GroupByPipePipe,
-    ChannelSessionsComponent
+    GroupByPipe,
+    ChannelSessionsComponent,
+    GroupdatesComponent
   ],
   imports: [
     BrowserModule,

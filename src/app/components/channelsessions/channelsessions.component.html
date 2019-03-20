@@ -3,27 +3,67 @@
     <div class="container">
       <div class="row">
         <div class="mx-auto">
-          <h4>{{lessonData.time | date:'fullDate'}}</h4>
+          <!--<h4>{{lessonData.time | date:'fullDate'}}</h4>-->
+          <h4>{{lessonData.key | date:'fullDate'}}</h4>
+          <div *ngFor="let individualLessonData of lessonData.value">
           <div class="panel border-light mb-3 panelwidth">
             <div class="panel-body">
               <div class="col-md-1">
-                <img class="img-circle" src="{{lessonData.subjectPhotoUrl}}" alt="Subjects Photo">
+                <img class="img-circle" src="{{individualLessonData.subjectPhotoUrl}}" alt="Subjects Photo">
               </div>
               <div class="col-md-6">
-                <h4>{{lessonData.title}}</h4>
-                <p>{{lessonData.description}}</p>
+                <h4>{{individualLessonData.title}}</h4>
+                <p>{{individualLessonData.description}}</p>
               </div>
               <div class="col-md-3">
-                <img class="img-circle" src="{{lessonData.instructorPhotoUrl}}" alt="Instructor Photo">
-                {{lessonData.instructorName}}
+                <img class="img-circle" src="{{individualLessonData.instructorPhotoUrl}}" alt="Instructor Photo">
+                {{individualLessonData.instructorName}}
               </div>
               <div class="col-md-2">
-                <p> {{lessonData.time | date:'medium'}}</p>
+                <p> {{individualLessonData.time | date:'shortTime'}}</p>
               </div>
             </div>
+          </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+
+
+
+<!--<div class="container mainbg">-->
+  <!--<div *ngFor="let lessonData of channel ">-->
+    <!--<div class="container">-->
+      <!--<div class="row">-->
+        <!--<div class="mx-auto">-->
+          <!--&lt;!&ndash;<h4>{{lessonData.time | date:'fullDate'}}</h4>&ndash;&gt;-->
+          <!--<h4>{{lessonData.key | date:'fullDate'}}</h4>-->
+          <!--<div *ngFor="let individualLessonData of lessonData.value">-->
+            <!--<div class="panel border-light mb-3 panelwidth">-->
+              <!--<div class="panel-body">-->
+                <!--<div class="col-md-1">-->
+                  <!--<img class="img-circle" src="{{lessonData.subjectPhotoUrl}}" alt="Subjects Photo">-->
+                <!--</div>-->
+                <!--<div class="col-md-6">-->
+                  <!--<h4>{{lessonData.title}}</h4>-->
+                  <!--<p>{{lessonData.description}}</p>-->
+                <!--</div>-->
+                <!--<div class="col-md-3">-->
+                  <!--<img class="img-circle" src="{{lessonData.instructorPhotoUrl}}" alt="Instructor Photo">-->
+                  <!--{{lessonData.instructorName}}-->
+                <!--</div>-->
+                <!--<div class="col-md-2">-->
+                  <!--<p> {{lessonData.time | date:'shortTime'}}</p>-->
+                <!--</div>-->
+              <!--</div>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+<!--</div>-->
+<app-groupdates></app-groupdates>
