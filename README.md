@@ -2,6 +2,25 @@
 This project is created as assigment for Kaplan team Interview process.
 This is built with Angular 7 as front End and Node as back end.The data is read from channel.json file as per requirement in server.
 Bootstrap 4 is used for UI.
+
+# Task details
+
+1. This project demonstrated the knowledge of consuming APIs, 
+unit/integration testing, and Angular 7+ UI code development skills.
+2. The project has used  observable, properties, services, events, routing,dependency injection,components and 
+modules as per requirements
+3. Appropriate semantic Angular, HTML markup, CSS is used.
+4. Understanding of API and properly 
+separated concerns (SOLID Principles) have been established.
+5. Unit testing for modules has been written.
+6. Followed Clean coding practice. 
+7. ARIA-Basic Accesibility guidelines hav been implemented as per 
+ https://www.w3.org/standards/webdesign/accessibility
+ Includes:-
+ 1. Tab focus on Navbar.
+ 2. The`alt` attribute for images.
+ 3. Tested website with ChromeVox Screen Reader.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.2.
 
 ## Development server
