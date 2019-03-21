@@ -1,14 +1,27 @@
 import { AppPage } from './app.po';
 
-describe('workspace-project App', () => {
+
+describe('Assignment Application main page', () => {
   let page: AppPage;
 
   beforeEach(() => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should display hello world in main page', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('Hello world!');
+    expect(page.getTitleText()).toEqual('Hello, world!');
   });
+
+  it('should display paragraph text', () => {
+    page.navigateTo();
+    expect(page.getParaText()).toEqual('Please click lesson tabs for assignment');
+  });
+
+
+  it('should display paragraph text', () => {
+    page.navigateTo();
+    expect(page.getLessonsTextFromNavBar()).toEqual('Lessons');
+  });
+
 });

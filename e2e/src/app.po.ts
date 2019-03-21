@@ -8,4 +8,15 @@ export class AppPage {
   getTitleText() {
     return element(by.css('app-root h1')).getText();
   }
+
+  getParaText(){
+    return element(by.css('app-root p')).getText();
+  }
+  getLessonsTextFromNavBar() {
+    return element(by.css('[routerLink="/channel"]')).getText();
+  }
+
+  clickingAndNavigatingToLessonTab(){
+
+  }
 }
