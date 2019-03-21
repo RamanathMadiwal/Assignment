@@ -2,11 +2,11 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HeaderComponent } from './header.component';
 import { RouterTestingModule } from '@angular/router/testing';
-
+import { Router} from '@angular/router';
 describe('HeaderComponent', () => {
   let component: HeaderComponent;
   let fixture: ComponentFixture<HeaderComponent>;
- // let navigateSpy: Spy;
+   let router :Router;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -22,7 +22,7 @@ describe('HeaderComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create the Header component with Links', () => {
     expect(component).toBeTruthy();
   });
   //Testing Router Components

@@ -7,7 +7,7 @@ import { AppRoutingModule} from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FetchLessonService} from './common/services/fetch-lesson.service';
 import { HttpClientModule} from "@angular/common/http";
-import { GroupByPipe } from './common/pipe/group-by.pipe';
+
 import { ChannelSessionsComponent } from './components/channelsessions/channelsessions.component';
 import { GroupdatesComponent } from './components/groupdates/groupdates.component';
 import { HeaderComponent } from './common/header/header.component';
@@ -17,7 +17,6 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 @NgModule({
   declarations: [
     AppComponent,
-    GroupByPipe,
     ChannelSessionsComponent,
     GroupdatesComponent,
     HeaderComponent,

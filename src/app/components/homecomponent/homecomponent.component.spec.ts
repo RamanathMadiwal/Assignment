@@ -23,7 +23,7 @@ describe('HomeComponent', () => {
     router = TestBed.get(Router)
   });
 
-  it('should create', () => {
+  it('should create Channel Session Component', () => {
     expect(component).toBeTruthy();
   });
 

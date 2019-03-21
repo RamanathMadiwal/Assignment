@@ -1,5 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import {FetchLessonService} from '../../common/services/fetch-lesson.service';
+import { FetchLessonService} from '../../common/services/fetch-lesson.service';
 import { ChannelSessionsComponent } from './channelsessions.component';
 import { RouterTestingModule } from '@angular/router/testing';
 import { HttpClientModule } from '@angular/common/http';
@@ -94,8 +94,28 @@ describe('ChannelsessionsComponent', () => {
 
   });
 
-  it('should create', () => {
+  it('should create the channel session component', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should have a defined component', () => {
+    expect(component).toBeDefined();
+  });
+
+  it('should create Grouped Dates in session page', () => {
+
+     component.ngOnInit();
+     fixture.detectChanges();
+     const compiled=fixture.debugElement.nativeElement;
+      expect(compiled.querySelector('h4')).toBeDefined()
+  });
+
+  it('should create images in session page', () => {
+
+    component.ngOnInit();
+    fixture.detectChanges();
+    const compiled=fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('img')).toBeDefined()
   });
 
   // it('fetch the lessons data', () => {
