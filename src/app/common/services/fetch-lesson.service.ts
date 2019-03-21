@@ -13,9 +13,6 @@ export class FetchLessonService {
     /* Data fetching via local file */
     // return this.http.get(this._url);
     /* User needs to fetch from data From Server via database */
-    console.log("Calling the server");
-
-
    return this.http.get('/api/channel/lessons');
   }
 }

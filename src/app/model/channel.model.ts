@@ -6,6 +6,4 @@ export class Channel {
   instructorPhotoUrl: string;
   subjectPhotoUrl: string;
   time: number;
-
-
 }

@@ -1,8 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule} from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FetchLessonService} from './common/services/fetch-lesson.service';
 import { HttpClientModule} from "@angular/common/http";
@@ -12,8 +13,6 @@ import { GroupdatesComponent } from './components/groupdates/groupdates.componen
 import { HeaderComponent } from './common/header/header.component';
 import { HomeComponent } from './components/homecomponent/homecomponent.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
 
 @NgModule({
   declarations: [

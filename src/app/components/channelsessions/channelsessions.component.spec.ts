@@ -1,20 +1,23 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ChannelsessionsComponent } from './channelsessions.component';
+import { ChannelSessionsComponent } from './channelsessions.component';
+import { RouterTestingModule } from '@angular/router/testing';
+import { HttpClientModule } from '@angular/common/http';
 
 describe('ChannelsessionsComponent', () => {
-  let component: ChannelsessionsComponent;
-  let fixture: ComponentFixture<ChannelsessionsComponent>;
+  let component: ChannelSessionsComponent;
+  let fixture: ComponentFixture<ChannelSessionsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ChannelsessionsComponent ]
+      imports: [RouterTestingModule,HttpClientModule],
+      declarations: [ ChannelSessionsComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ChannelsessionsComponent);
+    fixture = TestBed.createComponent(ChannelSessionsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
