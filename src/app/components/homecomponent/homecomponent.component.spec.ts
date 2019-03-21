@@ -1,16 +1,16 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HomeComponent} from './homecomponent.component';
-//import {AppComponent} from "../../app.component";
+import { Router } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';
 
 describe('HomeComponent', () => {
   let component: HomeComponent;
   let fixture: ComponentFixture<HomeComponent>;
-
+  let router: Router;
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [RouterTestingModule],
+      imports: [RouterTestingModule.withRoutes([])],
       declarations: [ HomeComponent ]
     })
     .compileComponents();
@@ -20,6 +20,7 @@ describe('HomeComponent', () => {
     fixture = TestBed.createComponent(HomeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
+    router = TestBed.get(Router)
   });
 
   it('should create', () => {
@@ -41,12 +42,8 @@ describe('HomeComponent', () => {
     expect(compiled.querySelector('p').textContent).toContain('Please click lesson tabs for assignment');
   });
 
-  // it('should click the button', () => {
-  //   const fixture = TestBed.createComponent(AppComponent);
-  //   fixture.detectChanges();
-  //   const button = fixture.debugElement.nativeElement.querySelector('.btn');
-  //   button.click();
-  // });
+
+
 
 
 });
