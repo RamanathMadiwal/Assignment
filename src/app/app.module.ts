@@ -9,16 +9,14 @@ import { FetchLessonService} from './common/services/fetch-lesson.service';
 import { HttpClientModule} from "@angular/common/http";
 
 import { ChannelSessionsComponent } from './components/channelsessions/channelsessions.component';
-import { GroupdatesComponent } from './components/groupdates/groupdates.component';
 import { HeaderComponent } from './common/header/header.component';
-import { HomeComponent } from './components/homecomponent/homecomponent.component';
+import { HomeComponent } from './components/home/homecomponent.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ChannelSessionsComponent,
-    GroupdatesComponent,
     HeaderComponent,
     HomeComponent,
     PageNotFoundComponent

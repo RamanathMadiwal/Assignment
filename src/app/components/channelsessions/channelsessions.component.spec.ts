@@ -120,7 +120,7 @@ describe('ChannelsessionsComponent', () => {
   });
 
 
-  it("should call loadLessonDetails and return list of Dates", async(() => {
+  it("should call loadLessonDetails and return object with sorted dates and its data", async(() => {
     const response = [];
     spyOn(service, 'getLessons').and.returnValue(of(response))
     component.loadLessonDetails();
