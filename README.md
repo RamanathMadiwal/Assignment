@@ -26,12 +26,14 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Development server
 
 1. Clone or download the codebase from [GitLink](https://github.com/RamanathMadiwal/Assignment).
-2. `cd ` into the `assignment` Folder.
+2. `cd ` into the `Assignment` Folder.
 3. Run  `npm i ` in terminal.This is for Angular application dependencies.
-4. `cd` to `server` folder.Run  `npm i ` in terminal.This is for Node application dependencies.
-5. Make sure there is Node installed in the machine.
-6. Run `node index` in terminal.
-7. Open the browser at `http://localhost:3001`.
+4. Run `ng build` in terminal.This will create dist folder which will be served by the node to browser.
+5. `cd` to `server` folder.Run  `npm i ` in terminal.This is for Node application dependencies.
+6. Make sure there is Node installed in the machine.
+7. Run `node index` in terminal.
+8. Open the browser at `http://localhost:3001`.
+9. Click the Lessons tab for the assignment in nav bar.
 
 ## Build
 
@@ -40,7 +42,9 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Extensive Unit test case written for all modules.
 
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Only Basic end to end test case is written.
